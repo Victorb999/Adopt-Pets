@@ -1,11 +1,11 @@
 <template>
-  <div class="home">
+  <div class="home-view-container">
     <h1>Adopt a new best friend</h1>
     <button class="btn btn-primary" @click='togglePetForm()'>
         Add new Pet
     </button>
-    <p>Total de animais cadastrados :{{animalsCount}}</p>
-    <p>Total de gatos cadastrados :{{getAllCats.length}} </p>
+    <p>Total de animais cadastrados : {{animalsCount}}</p>
+    <p>Total de gatos cadastrados : {{getAllCats.length}} </p>
 
     <b-form @submit.prevent="handleSubmit"  v-if="petForm">
       
